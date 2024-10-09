@@ -30,15 +30,17 @@ id="time-dependent-numerical-simulations-of-type-i-x-ray-burst-winds">Time-Depen
 Numerical Simulations of Type-I X-ray Burst Winds</h2>
 <p><em>Advised by Shane Davis</em></p>
 <p><br />
-I have started exploring time-dependent numerical solutions for winds
-driven from the surfaces of neutron stars (NS) undergoing photospheric
-radius expansion (PRE) during Type I X-ray bursts, supervised by
-Dr. Shane Davis in collaboration with Dr. Nevin Weinberg. This study is
-motivated by the potential to measure NS radii using burst spectra to
-constrain the Eddington flux—a method that has seen success but
-highlights a need for a better understanding of the wind dynamics and
-composition in order to reduce systematic spectral modeling
-uncertainties ( ¨Ozel &amp; Freire, 2016). Our work couples the 1D
+In my primary research work, I calculate time-dependent numerical
+solutions for winds driven from the surfaces of neutron stars (NS)
+undergoing photospheric radius expansion (PRE) during Type I X-ray
+bursts, supervised by Dr. Shane Davis in collaboration with Dr. Nevin
+Weinberg.</p>
+<p><br />
+This study is motivated by the potential to measure NS radii using burst
+spectra to constrain the Eddington flux—a method that has seen success
+but highlights a need for a better understanding of the wind dynamics
+and composition in order to reduce systematic spectral modeling
+uncertainties (Ozel &amp; Freire, 2016). Our work couples the 1D
 time-dependent MESA models of Yu &amp; Weinberg (2018), which use the
 diffusion approximation for radiation, to an Athena++ simulation with
 realistic radiation transport across the optically-thick to
@@ -60,16 +62,6 @@ condition.</li>
 </blockquote>
 <blockquote>
 <ol start="2" type="1">
-<li><strong>A New MESA Data Backend for Athena++</strong> The MESA
-models provide both initial conditions and a time-dependent inner
-boundary condition for the Athena++ simulation to follow as the burst
-evolves. To facilitate communication between the two, I have written a
-performant, stand-alone MESA backend in C++ that is natively compatible
-with Athena++ and can seamlessly import data profiles at runtime.</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="3" type="1">
 <li><strong>Coupling MESA and Athena++ at a Fixed Radius</strong> I have
 built infrastructure that allows the inner boundary of our Athena++
 simulation to follow the evolution of the radiative flux and energy
@@ -78,6 +70,14 @@ NS surface. Through extensive trial-and-error, I have finally designed
 an adaptive boundary condition with enough flexibility to allow
 self-correction of destabilizing artefacts produced by differences in
 discretization between the two codes.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3" type="1">
+<li><strong>A New MESA Data Backend for Athena++</strong> To facilitate
+communication between these two powerful codes, I have written a
+performant, stand-alone MESA backend in C++ that is natively compatible
+with Athena++ and can seamlessly import data profiles at runtime.</li>
 </ol>
 </blockquote>
 <p>My ongoing research on this project will form the central component
@@ -165,6 +165,17 @@ analysis I will report the morphology and kinematics of the outflow
 alongside synthetic transit spectra, which will make for useful
 comparison with observed transit signatures (McClellan, Funkhowser,
 Davis &amp; Arras, 2024, in prep).</p>
+<h3 id="references">References</h3>
+<p>Bourrier V, Ehrenreich D, Lecavelier des Etangs A. 2015. A&amp;A
+582:A65</p>
+<p>Dijkstra M, Haiman Z, Spaans M. 2006. ApJ 649:14–36</p>
+<p>Ehrenreich D, Bourrier V, Wheatley PJ, Lecavelier des Etangs A,
+Hebrard G, et al. 2015. Nature 522:459–461</p>
+<p>Harrington JP. 1973. MNRAS 162:43</p>
+<p>Jiang YF. 2021. ApJS 253:49</p>
+<p>McClellan BC, Davis SW, Arras P. 2022. ApJ 934:37</p>
+<p>Ozel F, Freire P. 2016. ARA&amp;A 54:401–440</p>
+<p>Yu H, Weinberg NN. 2018. ApJ 863:53</p>
 </article>
 </body>
 </html>

@@ -5,11 +5,12 @@
 *Advised by Shane Davis*
 
 \
-I have started exploring time-dependent numerical solutions for winds driven from the surfaces of neutron stars (NS) undergoing photospheric radius expansion (PRE) during Type I X-ray bursts,
-supervised by Dr. Shane Davis in collaboration with Dr. Nevin Weinberg. This study is motivated by the
-potential to measure NS radii using burst spectra to constrain the Eddington flux—a method that has seen
+In my primary research work, I calculate time-dependent numerical solutions for winds driven from the surfaces of neutron stars (NS) undergoing photospheric radius expansion (PRE) during Type I X-ray bursts, supervised by Dr. Shane Davis in collaboration with Dr. Nevin Weinberg.
+
+\
+This study is motivated by the potential to measure NS radii using burst spectra to constrain the Eddington flux—a method that has seen
 success but highlights a need for a better understanding of the wind dynamics and composition in order to
-reduce systematic spectral modeling uncertainties ( ¨Ozel & Freire, 2016). Our work couples the 1D time-dependent MESA models of Yu & Weinberg (2018), which use the diffusion approximation for radiation, to
+reduce systematic spectral modeling uncertainties (Ozel & Freire, 2016). Our work couples the 1D time-dependent MESA models of Yu & Weinberg (2018), which use the diffusion approximation for radiation, to
 an Athena++ simulation with realistic radiation transport across the optically-thick to optically-thin transition region of the wind. This work aims to reveal how optically-thin radiative transfer and the presence of
 heavy elements in the wind can impact burst spectra.
 
@@ -18,16 +19,14 @@ the NS surface. In the course of developing the Athena++ problem generator, I ha
 of diagnostic outputs for the implicit solver that enables close examination of every component of the
 radiation field at each sub-step of the iteration. This has been an asset in debugging the sensitive inner radiation boundary condition.
 
-> 2. **A New MESA Data Backend for Athena++** The MESA models provide both initial conditions and a
-time-dependent inner boundary condition for the Athena++ simulation to follow as the burst evolves.
-To facilitate communication between the two, I have written a performant, stand-alone MESA backend in
-C++ that is natively compatible with Athena++ and can seamlessly import data profiles at runtime.
-
-> 3. **Coupling MESA and Athena++ at a Fixed Radius** I have built infrastructure that allows the inner
+> 2. **Coupling MESA and Athena++ at a Fixed Radius** I have built infrastructure that allows the inner
 boundary of our Athena++ simulation to follow the evolution of the radiative flux and energy density as
 calculated by MESA, interpolated to a chosen radius near the NS surface. Through extensive trial-and-error,
 I have finally designed an adaptive boundary condition with enough flexibility to allow self-correction of
 destabilizing artefacts produced by differences in discretization between the two codes.
+
+> 3. **A New MESA Data Backend for Athena++** To facilitate communication between these two powerful codes, I have written a performant, stand-alone MESA backend in C++ that is natively compatible with Athena++ and can seamlessly import data profiles at runtime.
+
 
 My ongoing research on this project will form the central component of my thesis. This will include extensions
 of the problem to include general relativity and 2D axisymmetric geometry, exploring possible deviations
@@ -79,3 +78,23 @@ atmosphere in full 3D geometry including radiation forces from Lyα. A productio
 in development and will be deployed on Pleiades in the next month. In follow-up analysis I will report the
 morphology and kinematics of the outflow alongside synthetic transit spectra, which will make for useful
 comparison with observed transit signatures (McClellan, Funkhowser, Davis & Arras, 2024, in prep).
+
+
+
+### References
+
+Bourrier V, Ehrenreich D, Lecavelier des Etangs A. 2015. A&A 582:A65
+
+Dijkstra M, Haiman Z, Spaans M. 2006. ApJ 649:14–36
+
+Ehrenreich D, Bourrier V, Wheatley PJ, Lecavelier des Etangs A, Hebrard G, et al. 2015. Nature 522:459–461
+
+Harrington JP. 1973. MNRAS 162:43
+
+Jiang YF. 2021. ApJS 253:49
+
+McClellan BC, Davis SW, Arras P. 2022. ApJ 934:37
+
+Ozel F, Freire P. 2016. ARA&A 54:401–440
+
+Yu H, Weinberg NN. 2018. ApJ 863:53

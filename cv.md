@@ -61,11 +61,19 @@ IT Specialist
 
 ## Publications
 
+
 ### First Author
+
+> 5. *(in prep)* **B. C. McClellan**, C. Funkhowser, S. W. Davis, and P. Arras, "Numerical Simulation of Exoplanetary RHD Outflows Driven by EUV Heating and Lyman Alpha Radiation Forces", *The Astrophysical Journal*
+
+> 4. *(in prep)* **B. C. McClellan**, S. W. Davis, M. R. Meza, and N. Weinberg, "Time-Dependent Calculations of Super-Eddington Winds from Neutron Star Photospheric Radius Expansion Bursts", *The Astrophysical Journal*
 
 > 3. **B. C. McClellan**, S. W. Davis, and P. Arras 2022, *A Novel Solution for Resonant Scattering Using Self-consistent Boundary Conditions*, [ApJ](https://doi.org/10.3847/1538-4357/ac7724), [934, 37](https://ui.adsabs.harvard.edu/abs/2022ApJ...934...37M)
 
 ### Contributing Author
+
+> 6. *(in prep)* S. W. Davis, J. M. Stone, P. Chang, **B. C. McClellan**, B. Mills, E. Rohr, C. White, and C. Yang, "A Monte Carlo Radiation Transfer Module for Athena++," *The Astrophysical Journal*
+
 > 2. D. Narayanan, M. J. Turk, T. Robitaille, A. J. Kelly, **B. C. McClellan**, R. S. Sharma, P. Garg, M. Abruzzo, E. Choi, C. Conroy, B. D. Johnson, B. Kimock, Q. Li, C. C. Lovell, S. Lower, G. C. Privon, J. Roberts, S. Sethuram, G. F. Snyder, R. Thompson, and J. H. Wise 2021, *POWDERDAY: Dust Radiative Transfer for Galaxy Simulations*, [ApJS](https://doi.org/10.3847/1538-4365/abc487), [252, 12](https://ui.adsabs.harvard.edu/abs/2021ApJS..252...12N)\
 
 > 1. A. Townsend, S. Jeram, S. Eikenberry, Y. Dallilar, A. Garner, A. Gottlieb, **C. McClellan**, G. P. Sanchez, R. Robshaw, D. Rosenbaum, and A. Spahic 2018, *Optical/X-ray Flux Decoupling in MAXI J1820+070*, ATel, [11574, 1](https://ui.adsabs.harvard.edu/abs/2018ATel11574....1T)
@@ -181,6 +189,58 @@ Powderday: [https://powderday.readthedocs.io](https://powderday.readthedocs.io)
 Dust radiative transfer to produce realistic spectral energy distributions
 
 
+## Software-Related Skills
+
+**Python** *(9 years experience)*
+
+ - `MPI`, `astropy`, `matplotlib`, `scipy`
+ - Image processing pipeline development
+ - Interactive data visualization
+ - Contributions to `POWDERDAY` dust radiative transfer code
+
+\
+**C++** *(5 years experience)*
+
+  - Athena++ development
+    - Monte Carlo radiative transfer
+    - Data backend for integration with `MESA`
+    - Computational fluid dynamics problem design
+
+  - 3D data visualization
+    - **OpenGL** *(2 years experience)*
+    - GPU / Compute Shader programming
+
+\
+**git** *(9 years experience)*
+
+  - Software and research pipeline version control
+  - Large collaboration project development
+  - `github actions` - automated deployment of software and websites
+
+\
+**Linux OS** *(9 years experience)*
+
+  - `bash` command line, scripting
+  - High-performance computing
+    - NASA Pleiades
+    - University of Virginia Rivanna HPC
+    - University of Florida HiPerGator
+  - Archlinux, Docker containers
+
+\
+**GNU Make, Makefile** *(3 years experience)*
+
+  - Research pipeline engineering
+  - Software deployment
+  - Project design, reproducibility
+
+\
+**Blender** *(11 years experience)*
+
+  - Volume rendering of 3D simulation data
+  - 3D modeling
+  - Scientific diagram design
+
 ## Teaching
 
 ASTR 4140/5140: Advanced Research Methods (TA)
@@ -233,34 +293,40 @@ Brian Cate
 
 ## Talks
 
+Radiating Fluids in the Atmospheres of Stars and Planets
+[April 19, 2024]{style="float:right;clear:right"}
+
+*Bob Rood Memorial Research Symposium - NRAO, Charlottesville VA*
+
+\
 Athena++ Monte Carlo Radiative Transfer
 [May 11, 2023]{style="float:right;clear:right"}
 
-*Athena++ Developer Meeting, New York, NY*
+*Athena++ Developer Meeting - Center for Computational Astrophysics, New York NY*
 
 \
 A Novel Solution to an Old Problem in Lyman Alpha Radiative Transfer
 [Jun. 15, 2022]{style="float:right;clear:right"}
 
-*240th Meeting of the American Astronomical Society, Pasadena CA*
+*240th Meeting of the American Astronomical Society - Pasadena CA*
 
 \
 High-Mass Star Formation in Protoclusters of W51
 [Jan. 9, 2019]{style="float:right;clear:right"}
 
-*233rd Meeting of the American Astronomical Society, Seattle WA*
+*233rd Meeting of the American Astronomical Society - Seattle WA*
 
 \
 High-Mass Star Formation in Protoclusters of W51
 [Aug. 1, 2019]{style="float:right;clear:right"}
 
-*NRAO Array Operations Center, Soccoro NM*
+*NRAO Array Operations Center - Soccoro NM*
 
 \
 Time-Series Analysis of Ultramagnetic Variable Stars in PRESTO
 [Mar. 22, 2018]{style="float:right;clear:right"}
 
-*University Scholars Program Symposium, University of Florida, FL*
+*University Scholars Program Symposium - University of Florida, FL*
 
 
 ## Awards
